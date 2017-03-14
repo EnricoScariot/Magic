@@ -38,7 +38,7 @@ public class Magic {
       
       //put 5 cards into the hand of the players
       p1.inizializeHand();
-      p1.inizializeHand();
+      p2.inizializeHand();
       
      // the 2 id of the players are 0 or 1
      
