@@ -22,7 +22,7 @@ public class MainPhase extends Phase {
         System.out.println("Now you have the following cards : "+p.getHand().toString());
        // the player select the card that he want to play
        while(i>p.getHand().size()){
-            System.out.println("Which card do you want to play?(0/"+p.getHand().size());
+            System.out.println("Which card do you want to play?(0/"+(p.getHand().size()-1)+")");
             Scanner sc = new Scanner(System.in);
             i = sc.nextInt();
        }       
