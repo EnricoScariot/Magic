@@ -21,7 +21,7 @@ public class Magic {
      */
     public static void main(String[] args) {
       Stack phasesStack= new Stack();
-      
+    
       //create 2 players
       Player p1= new Player();
       Player p2= new Player();

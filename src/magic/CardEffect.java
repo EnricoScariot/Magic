@@ -11,4 +11,7 @@ package magic;
  */
 public class CardEffect {
     
+    public void execute(){
+        
+    }
 }
