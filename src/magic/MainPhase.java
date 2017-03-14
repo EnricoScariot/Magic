@@ -19,6 +19,7 @@ public class MainPhase extends Phase {
     @Override
     public void execute(Player p) {
        // the player select the card that he want to play
+       System.out.println("Which card do you want to play?");
        Scanner sc = new Scanner(System.in);
        int i = sc.nextInt();
        p.playCard(i);

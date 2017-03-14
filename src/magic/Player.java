@@ -81,6 +81,7 @@ public class Player {
     // draw a card from the top of the deck and put it in my hand
     public void draw(){
         hand.add(deck.remove(deck.size()-1));
+        System.out.println("Now you have the following cards : "+hand.toString());
     }
         
     

@@ -17,8 +17,10 @@ public class DrawPhase extends Phase {
     }
 
     @Override
+    
     public void execute(Player p) {
-        p.draw();
+        System.out.println(p +" draw a card.");
+        p.draw();        
     }
     
   

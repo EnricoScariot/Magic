@@ -44,14 +44,14 @@ public class Magic {
      
      p1.setId(0);
      p2.setId(1);
-     
+     stackInizialization(phasesStack);  
      // decidi chi inizia, in questo caso inizia il giocatore 1
      Scanner scanin = new Scanner(System.in);
      while(current != 0 && current!= 1){
-         System.out.println("Quale giocatore deve iniziare? (0/1)");
+     System.out.println("Which player have to begin? (0/1)");
      current = scanin.nextInt();
      }     
-    
+    while(p1.getLife()>0 && p2.getLife()>0){
          if((current%2)==p1.getId()){
              currentPlayer=p1;
              enemy=p2;
@@ -59,18 +59,20 @@ public class Magic {
          else {
              currentPlayer=p2;
              enemy=p1;
+         }                        
+//         System.out.println("Now is the turn of the player : "+current);
+//         System.out.println("You have the following cards "+currentPlayer.getHand().toString());
+//         //while che cicla finchè non viene inserita un numero di carta valida
+//         System.out.println("which one do you want to play?");
+         while(!phasesStack.empty()){
+             Phase fase=(Phase)phasesStack.pop();
+             fase.execute(currentPlayer);
+             System.out.println("The deck of the player : "+currentPlayer+" is :"+currentPlayer.getDeck().toString());
          }
          
-         stackInizialization(phasesStack);
-         
-        // Phase fase=(Phase)phasesStack.pop();
-         //fase.execute(currentPlayer);           
-         
-  //corpo del gioco
-  System.out.println("Tocca al giocatore "+current);
-  System.out.println("Hai le seguenti carte "+currentPlayer.getHand().toString());
-     
-     
+         current++;    
+    }
+
      /*
       
       System.out.println("the deck is" +p1.getDeck().toString());
