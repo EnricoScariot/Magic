@@ -48,7 +48,7 @@ public class Magic {
      
      current=0;
      
-     while(p1.getLife()>0&&p2.getLife()>0){
+    
          if((current%2)==p1.getId()){
              currentPlayer=p1;
              enemy=p2;
@@ -65,10 +65,10 @@ public class Magic {
          
          
          
-     }
      
      
      
+     /*
       
       System.out.println("the deck is" +p1.getDeck().toString());
       p1.shuffleDeck();
@@ -88,7 +88,7 @@ public class Magic {
       p1.untap(0);
       System.out.println("is tapped? " +p1.getField().get(0).istapped);
          
-         
+         */
          
     }
  }
