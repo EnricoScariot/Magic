@@ -109,8 +109,16 @@ public class Player {
     
     // draw a card from the hand of the player and put in into the battlefield
     public void playCard(int index){
-        if(!hand.isEmpty())
-            field.add(hand.remove(index));
+        //controlla se posso giocare le carte
+        if(!hand.isEmpty()){
+            //se la carta è un incantesimo o una creatura allora mettila in campo e esegui l'incantesimo o effetto della creatura altrimenti esegui l'effetto della stregoneria o istantaneo
+            if(hand.get(index).type=="Enchantment"||hand.get(index).type=="Creature" ){
+                hand.get(index).effect.execute();
+                field.add(hand.remove(index));
+            }
+            else
+                 hand.remove(index).effect.execute();
+        }
         
     }
     
