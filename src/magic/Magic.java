@@ -7,6 +7,7 @@ package magic;
 
 import java.util.ArrayList;
 import java.util.Stack;
+import java.util.Scanner;
 import static magic.PhaseManager.*;
 
 /**
@@ -26,7 +27,7 @@ public class Magic {
       Player p2= new Player();
       Player currentPlayer;
       Player enemy;
-      int current;
+      int current=-1;
      
       //create the 2 decks
       p1.deckCreate();
@@ -45,9 +46,11 @@ public class Magic {
      p2.setId(1);
      
      // decidi chi inizia, in questo caso inizia il giocatore 1
-     
-     current=0;
-     
+     Scanner scanin = new Scanner(System.in);
+     while(current != 0 && current!= 1){
+         System.out.println("Quale giocatore deve iniziare? (0/1)");
+     current = scanin.nextInt();
+     }     
     
          if((current%2)==p1.getId()){
              currentPlayer=p1;
@@ -60,12 +63,12 @@ public class Magic {
          
          stackInizialization(phasesStack);
          
-         Phase fase=(Phase)phasesStack.pop();
-         fase.execute(currentPlayer);
+        // Phase fase=(Phase)phasesStack.pop();
+         //fase.execute(currentPlayer);           
          
-         
-         
-     
+  //corpo del gioco
+  System.out.println("Tocca al giocatore "+current);
+  System.out.println("Hai le seguenti carte "+currentPlayer.getHand().toString);
      
      
      /*
