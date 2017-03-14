@@ -10,7 +10,7 @@ package magic;
  * @author skari
  */
 public class CardEffect {
-    
+    public String type;
     public void execute(){
         
     }
