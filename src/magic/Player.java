@@ -17,7 +17,7 @@ public class Player {
    
     private int id;
     private String Name;
-    private int life=20;
+    private int life=21;
     private ArrayList<Card> hand=new ArrayList<>();
     private ArrayList<Card> field=new ArrayList<>();
     private ArrayList<Card> deck=new ArrayList<>();

@@ -60,15 +60,7 @@ public class PhaseManager {
         }
     }
     
-     static void stackTest(Stack s){
-       DrawPhase d=new DrawPhase();
-       
-      
-       addPhase(s,"CombatPhase",d);
-       System.out.println("now the stack is: " + s);
-            
-    }
-    
+         
      static void stackInizialization(Stack s){
         EndPhase e=new EndPhase();
         s.push(e);
