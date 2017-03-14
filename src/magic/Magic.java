@@ -66,8 +66,7 @@ public class Magic {
 //         System.out.println("which one do you want to play?");
          while(!phasesStack.empty()){
              Phase fase=(Phase)phasesStack.pop();
-             fase.execute(currentPlayer);
-             System.out.println("The deck of the player : "+currentPlayer+" is :"+currentPlayer.getDeck().toString());
+             fase.execute(currentPlayer);             
          }
          
          current++;    

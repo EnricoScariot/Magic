@@ -19,6 +19,7 @@ public class CombatPhase extends Phase {
     @Override
     public void execute(Player p) {
 //        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Combat phase........");
     }
     
     
