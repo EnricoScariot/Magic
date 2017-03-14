@@ -19,7 +19,7 @@ public class Magic {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      Stack s= new Stack();
+      Stack phasesStack= new Stack();
       
       //create 2 players
       Player p1= new Player();
@@ -49,7 +49,7 @@ public class Magic {
      current=0;
      
      while(p1.getLife()>0&&p2.getLife()>0){
-         if(current==p1.getId()){
+         if((current%2)==p1.getId()){
              currentPlayer=p1;
              enemy=p2;
          }
@@ -58,12 +58,12 @@ public class Magic {
              enemy=p1;
          }
          
-         stackInizialization(s);
+         stackInizialization(phasesStack);
          
-         Phase fase=(Phase)s.pop();
+         Phase fase=(Phase)phasesStack.pop();
          fase.execute(currentPlayer);
          
-         //modifica di prova a caso
+         
          
      }
      
