@@ -68,7 +68,7 @@ public class Magic {
          
   //corpo del gioco
   System.out.println("Tocca al giocatore "+current);
-  System.out.println("Hai le seguenti carte "+currentPlayer.getHand().toString);
+  System.out.println("Hai le seguenti carte "+currentPlayer.getHand().toString());
      
      
      /*
