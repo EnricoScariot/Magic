@@ -127,4 +127,8 @@ public class Player {
             field.get(index).istapped=true;
     }
     
+     // remove the target card from the battlefield
+     public void removeCard(int index){
+         field.remove(index);
+     }
 }
