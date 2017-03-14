@@ -63,6 +63,7 @@ public class Magic {
          Phase fase=(Phase)s.pop();
          fase.execute(currentPlayer);
          
+         //modifica di prova a caso
          
      }
      
