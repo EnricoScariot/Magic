@@ -18,10 +18,14 @@ public class MainPhase extends Phase {
 
     @Override
     public void execute(Player p) {
+        int i=100;
+        System.out.println("Now you have the following cards : "+p.getHand().toString());
        // the player select the card that he want to play
-       System.out.println("Which card do you want to play?");
-       Scanner sc = new Scanner(System.in);
-       int i = sc.nextInt();
+       while(i>p.getHand().size()){
+            System.out.println("Which card do you want to play?(0/"+p.getHand().size());
+            Scanner sc = new Scanner(System.in);
+            i = sc.nextInt();
+       }       
        p.playCard(i);
     }
 }

@@ -18,7 +18,8 @@ public class EndPhase extends Phase {
 
     @Override
     public void execute(Player p) {
-        System.out.println("The deck of the player : "+p+" is :"+p.getDeck().toString());
+        System.out.println("The field of the player : "+p.getId()+" is :"+p.getField().toString());
+        System.out.println("The deck of the player : "+p.getId()+" is :"+p.getDeck().toString());
     }
 
   

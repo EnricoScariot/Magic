@@ -69,7 +69,8 @@ public class Magic {
              fase.execute(currentPlayer);             
          }
          
-         current++;    
+         current++;  
+         stackInizialization(phasesStack);
     }
 
      /*

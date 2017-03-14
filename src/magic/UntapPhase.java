@@ -18,6 +18,7 @@ public class UntapPhase extends Phase {
 
     @Override
     public void execute(Player p) {
+        System.out.println("Untap phase........");
        for(int i=0;i<p.getField().size();i++)
            p.untap(i);
     }
