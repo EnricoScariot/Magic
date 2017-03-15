@@ -70,7 +70,9 @@ public class Magic {
          }
          
          current++;  
+         //inizializzo nuovamente lo stack
          stackInizialization(phasesStack);
+         //aggiungo o tolgo fasi a seconda della carta che ho giocato
          resolveAddOrRemovePhases(addOrRemovePhases);
          //
          }
