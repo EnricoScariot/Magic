@@ -9,7 +9,7 @@ package magic;
  *
  * @author skari
  */
-public abstract class Phase { 
+public interface Phase { 
   
      public abstract String getName();
      

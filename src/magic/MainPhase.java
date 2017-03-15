@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author skari
  */
-public class MainPhase extends Phase {
+public class MainPhase implements Phase {
 
     @Override
    public String getName() {

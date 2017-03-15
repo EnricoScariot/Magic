@@ -9,7 +9,7 @@ package magic;
  *
  * @author skari
  */
-public class EndPhase extends Phase {
+public class EndPhase implements Phase {
 
     @Override
     public String getName() {
