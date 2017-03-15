@@ -19,7 +19,7 @@ public class DrawPhase extends Phase {
     @Override
     
     public void execute(Player p) {
-        System.out.println("Now is player "+p.getId() +" draw phase......");
+        System.out.println("Now is the player "+p.getId() +" draw phase......");
         p.draw();        
     }
     
