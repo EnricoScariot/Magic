@@ -14,7 +14,7 @@ public class PhaseManager {
     
     
     static Stack support= new Stack();
-   
+    static Stack addOrRemovePhases=new Stack();
     //add the phase "el" after the Phase specified into "where"
     static void addPhase(Stack s, String where, Phase el){
         if(where=="top")
@@ -60,6 +60,12 @@ public class PhaseManager {
         }
     }
     
+    static void resolveAddOrRemovePhases(Stack s){
+        while(!s.empty()){
+            CardEffect c= (CardEffect) s.pop();
+            c.execute();
+        }
+    }
          
      static void stackInizialization(Stack s){
         EndPhase e=new EndPhase();

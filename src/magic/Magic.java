@@ -21,7 +21,7 @@ public class Magic {
      */
     public static void main(String[] args) {
       Stack phasesStack= new Stack();
-    
+      
       //create 2 players
       Player p1= new Player();
       Player p2= new Player();
@@ -71,6 +71,9 @@ public class Magic {
          
          current++;  
          stackInizialization(phasesStack);
+         resolveAddOrRemovePhases(addOrRemovePhases);
+         //
+         }
     }
 
      /*
@@ -94,7 +97,4 @@ public class Magic {
       System.out.println("is tapped? " +p1.getField().get(0).istapped);
          
          */
-         
-    }
- }
-//ciao
+}    
