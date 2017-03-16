@@ -20,7 +20,8 @@ public class DrawPhase implements Phase {
     
     public void execute(Player p) {
         System.out.println("Now is the player "+p.getId() +" draw phase......");
-        p.draw();        
+        p.draw();  
+        p.tooManyCards(p);
     }
     
   

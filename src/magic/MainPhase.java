@@ -25,8 +25,10 @@ public class MainPhase implements Phase {
             System.out.println("Which card do you want to play?(0/"+(p.getHand().size()-1)+")");
             Scanner sc = new Scanner(System.in);
             i = sc.nextInt();
-       }       
-       p.playCard(i);
+       }     
+       
+        p.playCard(i);
+             
     }
 }
     
