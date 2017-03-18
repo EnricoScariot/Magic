@@ -112,7 +112,7 @@ public class Player {
     // draw 5 card from the top of the deck and put them into the hand
     public void inizializeHand(){
         if(deck.size()>=5){
-            for(int i=0;i<5;i++)
+            for(int i=0;i<7;i++)
                 draw();
         }
     }
@@ -125,6 +125,7 @@ public class Player {
             //if(hand.get(index).type=="Enchantment"||hand.get(index).type=="Creature" ){
                 //hand.get(index).effect.execute();
                 field.add(hand.remove(index));
+                hand.remove(index);
             //}
             //else
                  //hand.remove(index).effect.execute();
